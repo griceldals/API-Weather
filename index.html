@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>API Weather</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Aplicación del Clima</h1>
-        
-        <form id="cityForm">
-            <label for="cityInput">¿Cuál es tu ciudad?</label>
-            <input type="text" id="cityInput" placeholder="Ingresa tu ciudad" required>
-            <button type="submit">Consultar Clima</button>
+        <h1 class="title">Aplicación del Clima</h1>
+
+        <!-- Formulario para consultar el clima -->
+        <form id="cityForm" class="form">
+            <label for="cityInput" class="label">¿Cuál es tu ciudad?</label>
+            <input type="text" id="cityInput" class="input" placeholder="Ingresa tu ciudad" required>
+            <button type="submit" class="btn">Consultar</button>
         </form>
 
-        <div id="welcomeMessage"></div>
-        <button id="clearCity">Borrar Ciudad Guardada</button>
+        <div id="welcomeMessage" class="message"></div>
+        <button id="clearCity" class="btn-clear">Borrar</button>
 
-        <!--Ciudades por default-->
-        <h2>Clima en Ciudades default</h2>
-        <ul id="defaultCities"></ul>
+        <!-- Ciudades por default-->
+        <h2 class="subtitle">Clima en diferentes ciudades</h2>
+        <div id="defaultCities" class="city-cards-container"></div>
 
-        <!--Agregar ciudad-->
-        <h2>Agregar Ciudad</h2>
-        <input type="text" id="newCityInput" placeholder="Agregar nueva ciudad">
-        <button id="addCityButton">Agregar Ciudad</button>
+        <!-- Sección para agregar ciudad -->
+        <h2 class="subtitle">Agregar Ciudad</h2>
+        <input type="text" id="newCityInput" class="input" placeholder="Agregar nueva ciudad">
+        <button id="addCityButton" class="btn">Agregar</button>
 
-        <!--Ciudad más caliente-->
-        <h2>Ciudad más caliente</h2>
-        <div id="hottestCity"></div>
+        <!-- Ciudad más caliente -->
+        <h2 class="subtitle">Ciudad más caliente</h2>
+        <div id="hottestCity" class="hottest-city"></div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
